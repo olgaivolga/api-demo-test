@@ -1,0 +1,23 @@
+{
+  "name": "openapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --timeout 8000 --trace-deprecation --reporter mocha-multi --reporter-options spec=-,xunit=./junit_report.xml",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apidevtools/swagger-parser": "^10.0.3",
+    "axios": "^0.26.0",
+    "chai": "^4.3.6",
+    "config": "^3.3.7",
+    "express": "^4.17.2",
+    "mocha": "^9.2.1",
+    "mocha-multi": "^1.1.6",
+    "openapi-mock-express-middleware": "^3.0.2",
+    "openapi-sampler": "^1.2.1"
+  }
+}
